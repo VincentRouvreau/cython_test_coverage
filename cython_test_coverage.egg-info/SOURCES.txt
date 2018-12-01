@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+cython_test_coverage/__init__.py
+cython_test_coverage/basic_cython.pyx
+cython_test_coverage.egg-info/PKG-INFO
+cython_test_coverage.egg-info/SOURCES.txt
+cython_test_coverage.egg-info/dependency_links.txt
+cython_test_coverage.egg-info/not-zip-safe
+cython_test_coverage.egg-info/top_level.txt
