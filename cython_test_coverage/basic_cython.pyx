@@ -1,5 +1,4 @@
 # cython: linetrace=True
-# distutils: define_macros=CYTHON_TRACE=1
 
 cimport cython
 
