@@ -11,7 +11,7 @@ if __name__ == "__main__":
      setup( name = 'cython_test_coverage',
             packages=['cython_test_coverage'],
             cmdclass = {'build_ext': build_ext},
-            ext_modules = ext_modules,
+            ext_modules = cythonize(ext_modules, compiler_directives={'linetrace': True}),
             include_dirs=[np.get_include()],
             description='cython coverage test',
             url='https://github.com/s-sajid-ali/cython_test_coverage',
