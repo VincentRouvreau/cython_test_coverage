@@ -1,7 +1,11 @@
+# setuptools: define_macros=CYTHON_TRACE_NOGIL=1
+
 from setuptools import setup
 from setuptools.extension import Extension
 from Cython.Build import build_ext
 import numpy as np
+
+
 
 ext_modules=[ Extension('basic_cython',
                sources=['cython_test_coverage/basic_cython.pyx'],
