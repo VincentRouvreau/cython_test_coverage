@@ -1,7 +1,7 @@
-# setuptools: define_macros=CYTHON_TRACE_NOGIL=1
+# distutils: define_macros=CYTHON_TRACE_NOGIL=1
 
-from setuptools import setup
-from setuptools.extension import Extension
+from distutils import setup
+from distutils.core import Extension
 from Cython.Build import build_ext
 import numpy as np
 
