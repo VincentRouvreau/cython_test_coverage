@@ -5,7 +5,7 @@ import numpy as np
 
 module1=[ Extension('basic_cython',
           sources=['cython_test_coverage/basic_cython.pyx'],
-          directives = {'linetrace': False, 'language_level': 3},
+          directives = {'linetrace': True, 'language_level': 3},
           language='c')]
 
 if __name__ == "__main__":
