@@ -1,3 +1,5 @@
+# cython: language_level=3, linetrace=True
+
 #Basic test function
 cimport cython
 
