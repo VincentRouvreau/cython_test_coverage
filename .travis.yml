@@ -8,7 +8,7 @@ python:
 install:
   - pip install codecov
   - pip install cython
-  - python setup.py build_ext --force --inplace --define CYTHON_TRACE
+  - python setup.py build_ext --define CYTHON_TRACE
   
 script:
   - coverage run test.py
