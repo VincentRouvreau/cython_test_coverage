@@ -12,8 +12,8 @@ install:
   
 script:
   - coverage run test.py
-  - coverage xml
   - cython  --annotate-coverage coverage.xml  cython_test_coverage/basic_cython.pyx
+  - coverage xml
 
 after_success:
 - codecov
