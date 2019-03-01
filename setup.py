@@ -3,21 +3,10 @@ from distutils.core import Extension
 from Cython.Build import build_ext
 import numpy as np
 
-compiler_directives = {}
-define_macros = []
-
-compiler_directives['profile'] = True
-compiler_directives['linetrace'] = True
-define_macros.append(('CYTHON_TRACE', '1')) 
-define_macros.append(('CYTHON_TRACE_NOGIL', '1')) 
-
-
 module1=[ Extension('basic_cython',
           sources=['cython_test_coverage/basic_cython.pyx'],
-          define_macros=define_macros,
-          compiler_directives=compiler_directives,
+          compiler_directives={'linetrace': True},
           language='c')]
-
 
 if __name__ == "__main__":
      setup( name = 'cython_test_coverage',
