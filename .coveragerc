@@ -1,4 +1,2 @@
 [run]
 plugins = Cython.Coverage
-
-source = cython_test_coverage/basic_cython.pyx
