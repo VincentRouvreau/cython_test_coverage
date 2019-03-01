@@ -17,9 +17,10 @@ define_macros.append(('CYTHON_TRACE', '1'))
 
 
 module1=[ Extension('basic_cython',
-               sources=['cython_test_coverage/basic_cython.pyx'],
-                define_macros=define_macros,
-                language='c'),compiler_directives=compiler_directives]
+          sources=['cython_test_coverage/basic_cython.pyx'],
+          define_macros=define_macros,
+          compiler_directives=compiler_directives
+          language='c')]
 
 
 if __name__ == "__main__":
