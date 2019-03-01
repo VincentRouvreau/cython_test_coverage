@@ -17,5 +17,4 @@ if __name__ == "__main__":
             description='cython coverage test',
             url='https://github.com/s-sajid-ali/cython_test_coverage',
             author='Sajid',
-            author_email='sajidsyed2021@u.northwestern.edu',
-            zip_safe=False)
+            author_email='sajidsyed2021@u.northwestern.edu')
