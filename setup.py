@@ -9,13 +9,11 @@ module1=[ Extension('basic_cython',
           directives = {'linetrace': True, 'language_level': 3},
           language='c')]
 
-extensions = cythonize(module1)
-
 if __name__ == "__main__":
      setup( name = 'cython_test_coverage',
             packages=['cython_test_coverage'],
             cmdclass = {'build_ext': build_ext},
-            ext_modules = extensions,
+            ext_modules = cythonize(module_1),
             include_dirs=[np.get_include()],
             description='cython coverage test',
             url='https://github.com/s-sajid-ali/cython_test_coverage',
