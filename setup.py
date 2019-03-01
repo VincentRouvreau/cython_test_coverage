@@ -3,9 +3,6 @@ from distutils.core import Extension
 from Cython.Build import build_ext
 import numpy as np
 
-
-
-
 compiler_directives = {}
 define_macros = []
 
