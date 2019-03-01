@@ -1,2 +1,0 @@
-basic_cython
-cython_test_coverage
