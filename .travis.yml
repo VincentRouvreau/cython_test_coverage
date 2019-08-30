@@ -11,9 +11,9 @@ install:
   - python setup.py build_ext --define CYTHON_TRACE
   
 script:
+  - cython  --annotate-coverage coverage.xml  cython_test_coverage/basic_cython.pyx
   - coverage run test.py
   - coverage xml
-  - cython  --annotate-coverage coverage.xml  cython_test_coverage/basic_cython.pyx
 
 after_success:
 - codecov
