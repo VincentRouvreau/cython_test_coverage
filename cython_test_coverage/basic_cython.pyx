@@ -1,4 +1,4 @@
-# cython: language_level=3, linetrace=True
+# cython: language_level=3, linetrace=True, lineprofile=True
 
 # Basic Cython test
 cimport cython
